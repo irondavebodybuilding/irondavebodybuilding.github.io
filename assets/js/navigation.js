@@ -11,11 +11,18 @@ const openPrivacy = () => { if (privacy && location.hash === '#datenschutz') pri
 document.getElementById('privacy-link')?.addEventListener('click', () => { if (privacy) privacy.open = true; });
 window.addEventListener('hashchange', openPrivacy);
 openPrivacy();
-const copyButton = document.getElementById('copy');
-copyButton?.addEventListener('click', async () => {
-  const status = document.getElementById('copy-status');
-  try { await navigator.clipboard.writeText('iron10'); status.textContent = 'Code iron10 kopiert.'; copyButton.querySelector('span').textContent = 'Kopiert ✓'; }
-  catch { status.textContent = 'Dein Code: iron10 – bitte markieren und kopieren.'; }
+document.querySelectorAll('button.code[data-code]').forEach(copyButton => {
+  copyButton.addEventListener('click', async () => {
+    const code = copyButton.getAttribute('data-code');
+    const status = document.getElementById(copyButton.getAttribute('aria-controls'));
+    try {
+      await navigator.clipboard.writeText(code);
+      if (status) status.textContent = 'Code ' + code + ' kopiert.';
+      copyButton.querySelector('span').textContent = 'Kopiert ✓';
+    } catch {
+      if (status) status.textContent = 'Dein Code: ' + code + ' – bitte markieren und kopieren.';
+    }
+  });
 });
 // Mobile: Kennenlernen-Button erst nach dem Hero einblenden
 const mobileCta = document.querySelector('.mobile-cta');
