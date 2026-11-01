@@ -116,3 +116,19 @@ html.promo-open,body.promo-open{overflow:hidden}
 #meinlabtest .evo-logo-frame{display:flex;align-items:center;justify-content:center;background:#fff}
 #meinlabtest .evo-logo-frame img{position:static;width:auto;height:auto;max-width:calc(100% - 8px);max-height:calc(100% - 8px);left:auto;top:auto;object-fit:contain}
 #meinlabtest .partner-message p+p{margin-top:6px;color:var(--muted)}
+.akten-intro h1{max-width:18ch}
+.akten-grid{display:grid;grid-template-columns:1fr;gap:16px;margin:0 0 28px}
+.akten-tile{display:flex;flex-direction:column;min-width:0;background:#1b2024;border:1px solid #6b747a;border-top:3px solid var(--orange)}
+.akten-open{display:flex;flex-direction:column;min-width:0;color:inherit;text-decoration:none}
+.akten-open img{display:block;width:100%;height:auto;background:#0c0e0f}
+.akten-body{padding:14px 16px 4px}
+.akten-nr{margin:0 0 6px;color:var(--orange);font-size:11px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase}
+.akten-tile h2{margin:0 0 6px;font-size:28px;letter-spacing:-.6px}
+.akten-meta{margin:0;color:var(--muted);font-size:13px}
+.akten-download{align-self:flex-start;margin:8px 16px 16px;padding:8px 0;color:#f5b06b;font-size:13px;font-weight:700;text-decoration:none}
+.akten-download:hover{color:var(--orange)}
+.akten-fallback{margin:0 0 28px;padding-left:22px}
+.akten-fallback a{margin-right:14px}
+.akten-disclaimer{max-width:720px;margin:0 0 8px;color:var(--muted);font-size:13px;line-height:1.6}
+@media(min-width:700px){.akten-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}}
+@media(min-width:1100px){.akten-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
