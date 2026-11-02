@@ -1,9 +1,16 @@
 [
   {
+    "nr": "02",
+    "substanz": "Nandrolon",
+    "pdf": "akten/Akte_Fall_02_Nandrolon.pdf",
+    "preview": "assets/img/akten/Akte_Fall_02_Nandrolon",
+    "seiten": 6
+  },
+  {
     "nr": "01",
-    "substanz": "Testosteron",
-    "pdf": "akten/Akte_Fall_01_Testosteron.pdf",
-    "preview": "assets/img/akten/Akte_Fall_01_Testosteron",
+    "substanz": "Metenolon",
+    "pdf": "akten/Akte_Fall_01_Metenolon.pdf",
+    "preview": "assets/img/akten/Akte_Fall_01_Metenolon",
     "seiten": 6
   }
 ]
