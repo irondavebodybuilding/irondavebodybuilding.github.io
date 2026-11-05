@@ -73,6 +73,19 @@
 .merch-body .actions{flex-direction:column}
 .merch-body .cta{width:100%}
 .merch-steps li{color:#c6cbce}
+.merch-qty{max-width:140px}
+.merch-totals{margin:0 0 14px}
+.merch-totals div{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px solid var(--line)}
+.merch-totals dt{color:var(--muted);font-size:14px}
+.merch-totals dd{margin:0;font-weight:800}
+.merch-totals div:last-child dd{color:var(--orange);font-size:22px}
+.merch-paypal{margin-top:18px;padding:16px;border:1px solid var(--line);background:#14181c}
+.merch-paypal p:last-child{margin-bottom:0}
+@media(min-width:900px){
+.merch-grid{grid-template-columns:1fr}
+#malocher-tasse{display:grid;grid-template-columns:minmax(260px,380px) minmax(0,1fr);align-items:start}
+#malocher-tasse img{height:100%;max-height:640px}
+}
 .todo{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.5px;color:#181411;background:#ffd23f;padding:2px 8px;border-radius:2px;vertical-align:middle}
 .merch-price .todo{font-size:16px;color:#181411}
 .todo-box{border:2px dashed #ffd23f;padding:16px 18px;background:#ffd23f12}
