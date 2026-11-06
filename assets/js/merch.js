@@ -1,10 +1,6 @@
-/* Malocher Tasse – Vorschau.
-   Öffentliche PayPal-Live-Client-ID. Sie darf nicht benutzt werden, um
-   Bestellungen im Browser anzulegen oder zu capturen. PayPal verlangt dafür
-   einen Server (Orders v2) oder eine hostedButtonId aus dem PayPal-Dashboard.
-   Dieses Skript ruft paypal.com nicht auf. */
+/* Malocher Tasse: Stückzahl und Versand für die Überweisung.
+   PayPal läuft über den Hosted Button in merch.html und wird hier nicht aufgerufen. */
 (function () {
-  var PAYPAL_CLIENT_ID = 'BAAG5dmVN6MbhUyAXvdMZhw3sdEJ5oiZcynFPOUBZ89m3bQmrB_0WHT63tzsr71GzK_-LnUlZbI0rgseDo';
   var UNIT_CENTS = 1495;
   var SHIP_FEW_CENTS = 419;
   var SHIP_MANY_CENTS = 590;
@@ -15,10 +11,7 @@
   var ship = document.getElementById('mug-ship');
   var total = document.getElementById('mug-total');
   var email = document.getElementById('mug-email');
-  var slot = document.getElementById('paypal-slot');
   if (!qtyInput || !goods || !ship || !total || !email) return;
-
-  if (slot) slot.setAttribute('data-paypal-client-id', PAYPAL_CLIENT_ID);
 
   function euro(cents) {
     var whole = Math.floor(cents / 100);

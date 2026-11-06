@@ -81,6 +81,7 @@
 .merch-totals div:last-child dd{color:var(--orange);font-size:22px}
 .merch-paypal{margin-top:18px;padding:16px;border:1px solid var(--line);background:#14181c}
 .merch-paypal p:last-child{margin-bottom:0}
+#paypal-container-FZRTV5N3N8EYW{width:100%;min-height:45px}
 #malocher-tasse img{aspect-ratio:3/4;object-fit:contain;height:auto;max-height:none;background:#f3f1ee}
 @media(min-width:900px){
 .merch-grid{grid-template-columns:1fr}
