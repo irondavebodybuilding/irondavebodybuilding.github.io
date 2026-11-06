@@ -81,10 +81,10 @@
 .merch-totals div:last-child dd{color:var(--orange);font-size:22px}
 .merch-paypal{margin-top:18px;padding:16px;border:1px solid var(--line);background:#14181c}
 .merch-paypal p:last-child{margin-bottom:0}
+#malocher-tasse img{aspect-ratio:3/4;object-fit:contain;height:auto;max-height:none;background:#f3f1ee}
 @media(min-width:900px){
 .merch-grid{grid-template-columns:1fr}
 #malocher-tasse{display:grid;grid-template-columns:minmax(260px,380px) minmax(0,1fr);align-items:start}
-#malocher-tasse img{height:100%;max-height:640px}
 }
 .todo{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.5px;color:#181411;background:#ffd23f;padding:2px 8px;border-radius:2px;vertical-align:middle}
 .merch-price .todo{font-size:16px;color:#181411}
