@@ -164,9 +164,24 @@ html.promo-open,body.promo-open{overflow:hidden}
 .voice footer{color:var(--orange);font-size:12px;font-weight:800;letter-spacing:.3px}
 .voices .micro{margin-top:14px}
 .voices-compact{margin:6px 0 28px}
-.voices-compact .voices-head{grid-template-columns:120px 1fr;gap:14px 16px;margin-bottom:14px}
+.voices-compact .voices-head{grid-template-columns:1fr;gap:0;margin-bottom:14px}
 .voices-compact .voice{padding:16px 16px 14px}
 .voices-compact .voice p{font-size:15px;margin-bottom:12px}
 .voices-compact .micro{margin-bottom:0}
 @media(min-width:800px){.voice-grid{grid-template-columns:1fr 1fr;align-items:stretch}.voice{display:flex;flex-direction:column}.voice p{flex:1}}
 @media(max-width:560px){.voices-head{grid-template-columns:112px 1fr}}
+.hero{grid-template-areas:"line photo" "copy photo";align-items:center}
+.hero-introline{grid-area:line;min-width:0}
+.hero-copy{grid-area:copy;min-width:0}
+.hero-portrait{grid-area:photo;align-self:center}
+.hero-portrait img{width:100%;height:auto;max-height:none;aspect-ratio:1;object-fit:cover;object-position:center 18%}
+@media(max-width:650px){
+ .hero{display:grid;grid-template-columns:1fr;grid-template-areas:"photo" "line" "copy";gap:8px;align-items:start;padding:8px 0 20px}
+ .hero-target{margin:8px 0}
+ .hero-copy .actions{margin-top:12px}
+ .hero .intro{margin-bottom:0}
+ .hero-portrait{order:0;width:112px;max-width:112px;margin:0;justify-self:start;padding:0;box-shadow:none}
+ .hero-portrait img,.hero .hero-photo img{width:112px;height:112px;max-height:112px;aspect-ratio:1;object-fit:cover;object-position:center 18%}
+ .hero-introline .eyebrow{margin-bottom:6px}
+ .hero-introline h1{margin:0}
+}
