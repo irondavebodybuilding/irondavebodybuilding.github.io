@@ -154,3 +154,20 @@ html.promo-open,body.promo-open{overflow:hidden}
 .akten-disclaimer{max-width:720px;margin:0 0 8px;color:var(--muted);font-size:13px;line-height:1.6}
 @media(min-width:700px){.akten-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}}
 @media(min-width:1100px){.akten-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.voices-head{display:grid;grid-template-columns:min(168px,34vw) 1fr;gap:22px 28px;align-items:center;margin-bottom:22px}
+.voices-head h2{margin-bottom:0}
+.voices-photo{margin:0}
+.voices-photo img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border:1px solid #6b747a;border-top:3px solid var(--orange);border-radius:3px}
+.voice-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.voice{margin:0;padding:22px;border:1px solid #6b747a;background:linear-gradient(135deg,#2a3034,#1a1d20 65%);border-top:3px solid var(--orange);border-radius:3px;min-width:0}
+.voice p{margin:0 0 16px;color:#d5dadd;overflow-wrap:anywhere}
+.voice footer{color:var(--text);font-size:14px;font-weight:800}
+.voice footer span{display:block;margin-top:3px;color:var(--orange);font-size:12px;font-weight:800;letter-spacing:.3px}
+.voices .micro{margin-top:14px}
+.voices-compact{margin:6px 0 28px}
+.voices-compact .voices-head{grid-template-columns:120px 1fr;gap:14px 16px;margin-bottom:14px}
+.voices-compact .voice{padding:16px 16px 14px}
+.voices-compact .voice p{font-size:15px;margin-bottom:12px}
+.voices-compact .micro{margin-bottom:0}
+@media(min-width:800px){.voice-grid{grid-template-columns:1fr 1fr;align-items:stretch}.voice{display:flex;flex-direction:column}.voice p{flex:1}}
+@media(max-width:560px){.voices-head{grid-template-columns:112px 1fr}}
