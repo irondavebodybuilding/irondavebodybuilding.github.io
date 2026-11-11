@@ -161,8 +161,7 @@ html.promo-open,body.promo-open{overflow:hidden}
 .voice-grid{display:grid;grid-template-columns:1fr;gap:16px}
 .voice{margin:0;padding:22px;border:1px solid #6b747a;background:linear-gradient(135deg,#2a3034,#1a1d20 65%);border-top:3px solid var(--orange);border-radius:3px;min-width:0}
 .voice p{margin:0 0 16px;color:#d5dadd;overflow-wrap:anywhere}
-.voice footer{color:var(--text);font-size:14px;font-weight:800}
-.voice footer span{display:block;margin-top:3px;color:var(--orange);font-size:12px;font-weight:800;letter-spacing:.3px}
+.voice footer{color:var(--orange);font-size:12px;font-weight:800;letter-spacing:.3px}
 .voices .micro{margin-top:14px}
 .voices-compact{margin:6px 0 28px}
 .voices-compact .voices-head{grid-template-columns:120px 1fr;gap:14px 16px;margin-bottom:14px}
