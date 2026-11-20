@@ -55,10 +55,6 @@
 
 @media(max-width:650px){.partner.partner-prominent{display:flex;flex-direction:column;align-items:stretch;gap:18px}.partner.partner-prominent .code{align-self:flex-end;position:static}.partner.partner-prominent .partner-message{min-width:0}}
 
-/* Direct appointment booking */
-.booking-heading{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:start;margin-bottom:30px}.booking-heading p{max-width:650px}.booking-hours{padding:25px;border-left:3px solid var(--orange);background:#22282d}.booking-hours strong{display:block;margin-bottom:12px}.booking-hours small{color:var(--muted);line-height:1.65}.booking-shell{border:1px solid var(--line);background:#1b2024;min-width:0}.booking-consent{max-width:750px;margin:auto;padding:40px}.booking-consent p{color:var(--muted);font-size:14px}.booking-consent .cta{white-space:normal;text-align:left}.booking-frame{display:block;border:0;width:100%;height:900px;background:#fff}.booking-fallback{display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:space-between;font-size:14px;margin-top:16px}.booking-fallback span{color:var(--muted)}
-@media(max-width:650px){.booking-heading{grid-template-columns:1fr;gap:12px}.booking-hours{padding:20px}.booking-consent{padding:24px 18px}.booking-frame{height:1100px}.booking-section h2{font-size:34px}.booking-consent .cta{width:100%}.booking-fallback{display:block}.booking-fallback span{display:block;margin-top:16px}}
-
 /* ===== Neubau 2026-10: Ergänzungen (Portrait, Merch, Datenschutz, Mobile-CTA) ===== */
 .hero-portrait{max-width:440px;width:100%;justify-self:end}
 .hero-portrait img{height:auto;aspect-ratio:4/5;object-fit:cover;background:#101214}
