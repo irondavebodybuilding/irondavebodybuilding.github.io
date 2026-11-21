@@ -1,7 +1,7 @@
 /* Verkaufsseite /start
    Platzhalter, die vor dem Livegang ersetzt werden:
-   - META_PIXEL_ID bleibt "META_PIXEL_ID_PLACEHOLDER", bis die echte numerische Pixel-ID da ist.
-     Solange wird kein Skript geladen und kein Ereignis gesendet.
+   - META_PIXEL_ID ist 1796427091588386.
+     Das Skript wird erst geladen, wenn die Einwilligung "marketing" ist.
    - Die sieben Buchungslinks zeigen auf #copecart-basis-3, #copecart-basis-6, #copecart-basis-12,
      #copecart-plus-6, #copecart-plus-12, #copecart-elite-6 und #copecart-elite-12.
      Sobald ein href mit http:// oder https:// beginnt, haengt dieses Skript
@@ -16,7 +16,7 @@
 (function () {
   'use strict';
 
-  var META_PIXEL_ID = 'META_PIXEL_ID_PLACEHOLDER';
+  var META_PIXEL_ID = '1796427091588386';
   var ELITE_SEATS_LEFT = 10;
   var CONSENT_KEY = 'idbb-start-consent';
   var UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid'];
