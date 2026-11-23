@@ -181,3 +181,18 @@ html.promo-open,body.promo-open{overflow:hidden}
  .hero-introline .eyebrow{margin-bottom:6px}
  .hero-introline h1{margin:0}
 }
+.bw-banner{display:flex;align-items:center;gap:12px 16px;background:#0c0e0f;color:#f0f1ef;border-bottom:3px solid var(--orange);padding:8px 16px 8px 18px}
+.bw-banner p{margin:0;flex:1;font-size:14px;font-weight:800;line-height:1.35;letter-spacing:.2px}
+.bw-banner .bw-until{color:var(--orange);white-space:nowrap}
+.bw-banner .cta{flex:0 0 auto;min-height:40px;padding:8px 14px;font-size:12px;box-shadow:none}
+.bw-close{flex:0 0 auto;width:44px;height:44px;border:1px solid #858d93;background:#1b1e20;color:#f0f1ef;font-size:26px;line-height:1}
+.bw-banner[hidden],.bw-offer[hidden]{display:none !important}
+.bw-offer .plan h3{font-size:26px;letter-spacing:-.5px}
+.bw-offer .cta{margin-top:8px}
+@media(max-width:650px){
+.bw-banner{flex-wrap:wrap;align-items:flex-start;padding:8px 52px 10px 14px;position:relative}
+.bw-banner p{flex:1 1 100%}
+.bw-banner .bw-until{white-space:normal}
+.bw-banner .cta{width:auto}
+.bw-close{position:absolute;top:4px;right:6px}
+}
